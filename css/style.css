@@ -123,10 +123,10 @@ html {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banner/banner1.webp");
+    content: url("../img/banners/banner1.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banner/banner2.webp");
+    content: url("../img/banners/banner2.jpg");
   }
 }
 
@@ -137,7 +137,8 @@ html {
   height: 70px;
   background: #ffffff;
   padding: 50px 0px;
-  background-color: #253860;
+  background-color: var(--colorSecondary);
+  /* background-color: #253860; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -157,7 +158,7 @@ html {
   font-weight: 400;
   text-align: center;
 
-  font-size: 15px !important;
+  font-size: 17px !important;
   line-height: 23px !important;
   margin-top: 10px;
 }
@@ -478,5 +479,48 @@ html {
   #thanku_section p {
     padding: 0 1.2em;
     font-size: 0.8em;
+  }
+}
+
+/* Configuration */
+.config_container .card {
+  width: 19rem;
+}
+
+.prices_row {
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .config_container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.prices_row .card img {
+  height: 200px;
+  border: 1px solid var(--colorBackgroundOverlay);
+}
+
+.price_badge {
+  padding: 10px;
+  top: 0;
+  left: 75%;
+  font-size: 1em;
+  font-weight: normal;
+  background-color: var(--colorPrimary);
+}
+.price_btn,
+.price_btn:hover,
+.price_btn:active {
+  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorPrimary) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .config_container .card {
+    width: 100%;
   }
 }
