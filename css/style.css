@@ -24,8 +24,8 @@ html {
 }
 
 :root {
-  --colorPrimary: #b19652;
-  --colorSecondary: #f0c021;
+  --colorPrimary: #015c98;
+  --colorSecondary: #1d659e;
   --colorWhite: #ffffff;
   --colorOffWhite: #f7f7f7;
   --colorBorderWhite: #dbe4e9;
@@ -127,5 +127,47 @@ html {
   }
   .carousel-item .banner2 {
     content: url("../img/banner/banner2.webp");
+  }
+}
+
+/* Highlights
+.features_div .col {
+  background-color: var(--colorPrimary);
+  margin: 2px;
+} */
+
+.project {
+  margin: 12px auto;
+  height: 70px;
+  background: #ffffff;
+  padding: 50px 0px;
+  background-color: #253860;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  outline: 2px solid #fff;
+  outline-offset: -6px;
+}
+
+.proj-img img {
+  width: 50px !important;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 40%;
+}
+
+.proj-text {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+
+  font-size: 15px !important;
+  line-height: 23px !important;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .proj-text {
+    padding-left: 30px;
   }
 }
